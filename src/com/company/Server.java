@@ -20,9 +20,9 @@ public class Server {
         String answer = "";
         out.println(String.format(question));
         out.println(String.format(isFinish));
-        System.out.println("SERVER: "+question);
+        System.out.println("SERVER: " + question);
         answer = in.readLine();
-        System.out.println("CLIENT: "+answer);
+        System.out.println("CLIENT: " + answer);
         return answer;
     }
 

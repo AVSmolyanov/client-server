@@ -22,7 +22,7 @@ public class Client {
                 while (true) {
                     String question = in.readLine();
                     String isFinish = in.readLine();
-                    System.out.println("SERVER: "+question);
+                    System.out.println("SERVER: " + question);
                     switch (isFinish) {
                         case "Yes":
                             answer = "end";
@@ -36,24 +36,6 @@ public class Client {
                     }
                     out.println(String.format(answer));
                 }
-
-
-//            String msg;
-//            System.out.println("Write something to start conversationYou ('end' to finish):");
-//            msg = scanner.nextLine();
-//            out.println(msg);
-//
-//            while (true) {
-//
-//                System.out.println("You ('end' to finish):");
-//                msg = scanner.nextLine();
-//                out.println(msg);
-//                if ("end".equals(msg)) {
-//                    break;
-//                }
-//                System.out.println("SERVER: " + in.readLine());
-//            }
-
 
             } catch (Exception e) {
                 System.out.println(e.getMessage());
